@@ -32,8 +32,16 @@ var $price;
 var first_name;
 var number123;
 // illegal 
-var 123number;    // Starts with a number
-var var;          // Reserved keyword
-var user-name;    // Hyphen not allowed
-var my variable;  // Space not allowed
-var !total; 
+// var 123number;    // Starts with a number
+// var var;          // Reserved keyword
+// var user-name;    // Hyphen not allowed
+// var my variable;  // Space not allowed
+// var !total; 
+document.writeln("a) A heading stating “Rules for naming JS variables”")
+document.writeln("b) Variable names can only contain ______, ______,")
+ document.writeln("______ and ______.")
+ document.writeln("For example $my_1stVariable")
+ document.writeln("c) Variables must begin with a ______, ______ or")
+document.writeln("_____. For example $name, _name or name")
+ document.writeln("d) Variable names are case _________")
+ document.writeln("Variable names should not be JS _________")
