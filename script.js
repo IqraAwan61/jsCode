@@ -206,6 +206,28 @@ document.writeln("_____. For example $name, _name or name \n")
   document.writeln("<tr><th colspan='2'>Total</th><th>" + totalObtained + "/" + totalMarks + "</th></tr>");
   document.writeln("<tr><th colspan='2'>Percentage</th><th>" + percentage.toFixed(2) + "%</th></tr>");
   document.writeln("</table>");
+  // working with prompt
+  
+    // Task 1: Prompt for first name
+    let firstName = prompt("Enter first name");
+
+    // Task 2: Prompt with default value
+    let country = prompt("Country?", "China");
+
+    // Task 3: Corrected statement
+    let yourName = prompt("Enter Your Name");
+
+    // Task 4: Prompt with string message and default input
+    let color = prompt("What's your favorite color?", "Blue");
+
+    // Task 5: Use variables for prompt message and default
+    let msg = "What's your favorite fruit?";
+    let defaultFruit = "Mango";
+    let userFruit = prompt(msg, defaultFruit);
+
+    // Task 6: Prompt with message + default, then show alert
+    let city = prompt("Enter your city", "Karachi");
+    alert("You entered: " + city);
 
 
 
