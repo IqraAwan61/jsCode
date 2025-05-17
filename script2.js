@@ -81,12 +81,11 @@
 // document.write("String: " + word1 + "<br>");
 // document.write("Index of 'n': " + index);
 // chapter 31 to 38
+// geeting date
 let dobj= new Date();
 console.log(dobj);
-// var d = new Date();
-// var currentMonth = d.getMonth();
-// console.log(currentMonth);
 
+// include or not
 let daysInWeek=["sun","mon","tues","wed", "thurs", "fri", "sat"]
 console.log(daysInWeek.includes("tues"));
 
@@ -94,7 +93,7 @@ for (let index = 0; index < daysInWeek.length; index++) {
 
   
 }
-  
+  // max and min
 let numbers=[1,2,3,4,5]
 console.log(numbers.reverse());
 
@@ -114,8 +113,10 @@ for (let i = 0; i < numbers.length; i++) {
 }
   
 }
+// repeat letter
 let letter="iqra"
 console.log( letter.repeat(10));
+// take number from user and find avg
 let array=5;
 let sum=0;
 for (let index = 0; index < array; index++) {
@@ -126,14 +127,14 @@ for (let index = 0; index < array; index++) {
  let avg=sum/array;
 console.log(avg);
 
-
+// concat two words
 function myFun(a,b) {
  console.log(`${a+b}`);
  
 }
 myFun("iqra","khan")
 
-
+// swith statement
 let cityName=prompt("enter a city name:")
 switch (cityName) {
   case "value":
@@ -147,4 +148,41 @@ switch (cityName) {
     break;
   default:
     break;
+}
+// circumference and area of circle
+function calcCircumference(radius) {
+  let circumference = 2 * Math.PI * radius;
+  console.log("The circumference is " + circumference);
+}
+
+function calcArea(radius) {
+  let area = Math.PI * radius * radius;
+  console.log("The area is " + area);
+}
+calcArea(3.14)
+calcCircumference(3.14)
+// calculate area of rectangle
+function areaRectangle(width, height) {
+  return width * height;
+}
+
+console.log(areaRectangle(5, 10)); // Example
+
+let w = 7;
+let h = 3;
+console.log(areaRectangle(w, h));
+// taking first and last number 
+function displayCounting(start, end) {
+  for (let i = start; i <= end; i++) {
+    document.write(i + "<br>");
+  }
+}
+// square
+function square(num) {
+  return num * num;
+}
+// factorial
+function factorial(n) {
+  if (n === 0 || n === 1) return 1;
+  return n * factorial(n - 1);
 }
